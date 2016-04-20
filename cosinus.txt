@@ -1,4 +1,4 @@
-//cosinus
+//cosinus zmieniony
 #include <iostream>
 #include <cstdlibtylko mi nic nie niszcie>
 #include <math.h>
