@@ -1,0 +1,49 @@
+//srednia wazona
+#include <iostream>
+#include <conio.h>
+#include <cstdlib>
+#include <math.h>
+
+using namespace std;
+
+
+int main()
+{
+    int ilosc=0;
+    float ocena=0;
+    float srednia;
+    float waga=0;
+    double mianownik = 0;
+    double licznik = 0;
+    
+        cout << "Podaj ilosc ocen";
+        cin >> ilosc;
+   
+        
+        
+        
+    for( int i = 1; i <= ilosc; i++ )
+    {
+       
+        cout << "Podaj ocene nr " << i << ": ";
+        cin >> ocena;
+        cout << "Podaj wage";
+        cin >> waga;
+        
+    }
+    
+    srednia = 0;
+    for(int i =1; i <= ilosc; i++)
+    {
+        licznik += waga * ocena;
+        mianownik += waga;
+        }
+    
+    srednia = ( licznik / mianownik );
+    cout << "Srednia wazona ocen wynosi = " << srednia << endl;
+
+        
+    getch();
+    return(0);
+    }
+//srednia wazona

@@ -1,0 +1,59 @@
+// iloczyn skalarny wektorów 01
+#include <cstdlib>
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char *argv[])
+{
+    int n;
+    int wektor;
+    int a[100];
+    int b[100];
+  
+    
+    cout << "Podaj wartosc n: ";
+    cin >> n;
+    
+    while(n>100)
+    {
+        cout << "Wartosc n musi byc <= 100" << endl;
+    
+        }
+    
+    
+    cout << "Podaj wspolrzedne wektora a: " << endl;
+    
+    for (unsigned int i=0; i<n; i++)
+    {
+           cin >> a[i];
+        
+    }
+    
+    cout << "Podaj wspolrzedne wektora b: " << endl;
+    for (unsigned int i=0; i<n; i++)
+    {
+          cin>> b[i];
+        
+    }
+    
+    
+    
+    
+    
+    wektor= 0;
+    
+    for (unsigned int i=0; i<n; i++)
+    {
+           wektor += a[i] * b[i];
+        
+    }
+    
+    cout << "iloczyn skalarny wektorow wynosi: " << wektor << endl;
+    
+    
+    
+    system("PAUSE");
+    return EXIT_SUCCESS;
+}
+//iloczyn skalarny wektorów

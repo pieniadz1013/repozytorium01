@@ -1,0 +1,47 @@
+//cosinus
+#include <iostream>
+#include <cstdlib>
+#include <math.h>
+#include <iomanip>
+ 
+using namespace std;
+
+int main()
+{
+
+unsigned int n=1000;
+double x=0;
+
+cout<<"Witaj w programie obliczajacym wartosc funkcji cos(x) w zakresie <-28 stopni, 28 stopni>"<<endl;
+cout<<"Podaj x w stopniach"<<endl;
+cin>>x;
+
+while(x<-28 || x>28)
+{
+    cout<<"Podales zly x. Zakres to <-28,28>"<<endl;
+    cin>>x;
+
+}
+
+double pi = 3.14159;
+double cos=1;
+
+    x = x*pi/180;
+
+for(int i=1;i<=n;i++)
+{
+
+    cos *= (1-(4*x*x)/((pi*pi)*(2*i-1)*(2*i-1)) ) ;
+
+}
+
+
+
+cout<<"cos("<<x;
+cout.precision(1);
+cout<<") = "<<cos<<endl;
+
+system("PAUSE");
+return 0;
+}
+//cosinus

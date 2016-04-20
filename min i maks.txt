@@ -1,0 +1,89 @@
+//minimum i maksimum liczb a,b,c
+#include <iostream>
+#include <cstdlib>
+#include <math.h>
+#include <iomanip>
+
+using namespace std;
+
+
+int minimum(int& a, int& b, int& c)
+{
+    int min;
+    if(a<b)
+    {
+        min = a;
+        }
+        else
+        {
+            min = b;
+            }
+            if(c< min)
+            {
+                min = c;
+                }
+
+                int p = a;
+                    a = c;
+    
+                
+    return min;
+}
+
+int main()
+{
+    int a=0, b=0, c=0;
+
+    cout << "Podaj liczbe 1, 2, i 3: " << endl;
+    cin >> a >> b >> c;
+    
+    cout << endl;
+    cout << "Podales (" << a << "," << b << "," << c << ")." << endl;
+    cout << minimum(a,b,c) << endl;
+
+
+
+
+
+system("Pause");
+}
+// minimum i maksimum liczb a,b,c
+
+//min , max i srednia
+#include <iostream>
+#include <cstdlib>
+
+using namespace std;
+
+int main()
+{
+    int n;
+    int *tab = new int [n];
+    int ilosc=0;
+    
+    cout << "Podaj ile liczb chcesz wpisac: " << endl;
+    cin >> ilosc;
+    
+    
+
+    for(int i = 0; i < ilosc; i++)
+    {
+        cout << "Podaj liczbe nr.  : " << i + 1;
+        cin >> tab[i];
+    }
+    
+    int min=0, max=0;
+    float srednia = 0;
+    min = max = tab[0];
+
+    for(int i = 0; i < ilosc; i++){
+        if(tab[i] > max){ max = tab[i]; }
+        if(tab[i] < min){ min = tab[i]; }
+        srednia += tab[i];
+    }
+
+    cout << "\nMin: " << min << "\nMax: " << max << "\nSrednia: " << srednia / ilosc;
+    system("PAUSE");
+    return 0;
+}
+//min, max i srednia
