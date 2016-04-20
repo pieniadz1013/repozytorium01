@@ -7,10 +7,10 @@
 using namespace std;
 
 
-// Program z uzyciem instrukcji wyboru switch dotycz¹cy konkretnych dni
+// Program z uzyciem instrukcji wyboru switch dotyczÂ¹cy konkretnych dni
 
 
-int main()
+int ninasofinasf main()
 {
     int wybor=0;
     
